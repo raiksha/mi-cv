@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV · María Constanza Riquelme</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inconsolata:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+<button id="btn-pdf" onclick="window.print()">↓ Descargar PDF</button>
+
+<article class="cv">
+
+  <!-- HEADER -->
+  <header class="cv-header">
+    <div class="avatar-wrap">
+      <img src="./foto-de-perfil.png" alt="Foto de perfil de María Constanza Riquelme"
+           onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+      <div class="avatar-placeholder" style="display:none;">MCR</div>
+    </div>
+    <div class="header-text">
+      <h1>María Constanza Riquelme</h1>
+      <p class="subtitle">Desarrolladora Full Stack · En formación · Santiago, Chile</p>
+    </div>
+  </header>
+
+  <!-- SIDEBAR -->
+  <aside class="cv-sidebar">
+
+    <div>
+      <p class="section-label">Contacto</p>
+      <ul class="contact-list">
+        <li class="contact-item">
+          <span class="contact-label">Email</span>
+          <a href="mailto:mariariquelme.dev@gmail.com">mariariquelme.dev@gmail.com</a>
+        </li>
+        <li class="contact-item">
+          <span class="contact-label">WhatsApp</span>
+          +56 9 9539 7051
+        </li>
+        <li class="contact-item">
+          <span class="contact-label">GitHub</span>
+          <a href="https://github.com/raiksha" target="_blank">github.com/raiksha</a>
+        </li>
+        <li class="contact-item">
+          <span class="contact-label">Portafolio</span>
+          <a href="https://mariariquelme.dev" target="_blank">mariariquelme.dev</a>
+        </li>
+      </ul>
+    </div>
+
+    <div>
+      <p class="section-label">Habilidades técnicas</p>
+      <div class="chip-group">
+        <span class="chip chip-tech">HTML + CSS</span>
+        <span class="chip chip-tech">JavaScript</span>
+        <span class="chip chip-tech">Java básico</span>
+        <span class="chip chip-tech">Git · GitHub</span>
+        <span class="chip chip-tech">Terminal</span>
+        <span class="chip chip-tech">Python</span>
+        <span class="chip chip-tech">VS Code</span>
+      </div>
+    </div>
+
+    <div>
+      <p class="section-label">Habilidades blandas</p>
+      <div class="chip-group">
+        <span class="chip chip-soft">Aprendizaje continuo</span>
+        <span class="chip chip-soft">Adaptabilidad</span>
+        <span class="chip chip-soft">Trabajo en equipo</span>
+        <span class="chip chip-soft">Comunicación</span>
+        <span class="chip chip-soft">Responsabilidad</span>
+      </div>
+    </div>
+
+    <div>
+      <p class="section-label">Idiomas</p>
+      <ul class="lang-list">
+        <li class="lang-row">
+          <span class="lang-name">Español</span>
+          <span class="lang-level">Nativo</span>
+        </li>
+        <li class="lang-row">
+          <span class="lang-name">Inglés</span>
+          <span class="lang-level">Intermedio</span>
+        </li>
+      </ul>
+    </div>
+
+  </aside>
+
+  <!-- MAIN -->
+  <main class="cv-main">
+
+    <section>
+      <p class="section-label">Perfil profesional</p>
+      <div class="entry">
+        <p class="entry-body entry-body-gap">
+          Desarrolladora en formación con experiencia práctica en <strong>desarrollo web</strong>, <strong>scripting</strong> y <strong>automatización</strong>. Trabajo con <strong>React</strong>, <strong>Node.js</strong>, <strong>JavaScript</strong> y <strong>TypeScript</strong>, y me siento cómoda con <strong>Docker</strong>, <strong>PostgreSQL</strong>, <strong>NGINX</strong> y la <strong>CLI de Linux</strong> para construir y desplegar proyectos. Actualmente ampliando mis habilidades en el <strong>Bootcamp Full Stack Java</strong> de <strong>Generation Chile</strong>, donde profundizo en <strong>Java</strong>, <strong>Spring Boot</strong>, <strong>SQL</strong> y buenas prácticas de desarrollo.
+        </p>
+        <p class="entry-body">
+          Apasionada por aprender, resolver problemas y transformar ideas en soluciones funcionales y amigables para el usuario.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <p class="section-label">Formación académica</p>
+      <div class="entry">
+        <p class="entry-title">Bootcamp Full Stack Java</p>
+        <p class="entry-meta">Generation Chile · 2026 · En curso</p>
+      </div>
+      <div class="entry">
+        <p class="entry-title">Analista Programador</p>
+        <p class="entry-meta">INACAP · 2018 - 2022 · Estudios cursados, sin titulación</p>
+      </div>
+      <div class="entry">
+        <p class="entry-title">Enseñanza media completa</p>
+        <p class="entry-meta">Centro Educacional Niño Dios De Malloco · 2015</p>
+      </div>
+    </section>
+
+    <section>
+      <p class="section-label">Experiencia</p>
+      <div class="entry">
+        <p class="entry-title">Práctica universitaria</p>
+        <p class="entry-meta">Desarrollo de script de migración de datos</p>
+        <p class="entry-body">
+          Migración de datos entre una base de datos externa y una interna mediante consumo de API,
+          automatizando la transferencia por sección.
+        </p>
+      </div>
+      <div class="entry">
+        <p class="entry-title">Aplicación de limpieza y formateo de datos</p>
+        <p class="entry-meta">Python · TkInter · CSV</p>
+        <p class="entry-body">
+          Desarrollo de herramienta de escritorio para procesar archivos .csv: limpieza, reformateo
+          y enriquecimiento de columnas, con exportación al formato final requerido.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <p class="section-label">Proyectos</p>
+      <div class="entry">
+        <p class="entry-title">Perfil README de GitHub</p>
+        <p class="entry-meta">Markdown</p>
+        <p class="entry-body">
+          Perfil profesional en GitHub usando Markdown para presentarme como developer.
+        </p>
+      </div>
+      <div class="entry">
+        <p class="entry-title">Primer sitio web en HTML</p>
+        <p class="entry-meta">HTML5 semántico</p>
+        <p class="entry-body">
+          Página estática aplicando estructura HTML5 y etiquetas semánticas correctas.
+        </p>
+      </div>
+      <div class="entry">
+        <p class="entry-title">CV interactivo</p>
+        <p class="entry-meta">HTML · CSS · JavaScript</p>
+        <p class="entry-body">
+          Este mismo CV: diseño dark mode con paleta verde naturaleza, tipografía editorial
+          y descarga a PDF vía <code>window.print()</code>.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="cv-footer">
+    CV · HTML + CSS + JS &nbsp;·&nbsp; C24 · Generation Chile &nbsp;·&nbsp; 2026
+  </footer>
+
+</article>
+
+</body>
+</html>
