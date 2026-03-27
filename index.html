@@ -201,10 +201,14 @@
 
   <!-- FOOTER -->
   <footer class="cv-footer">
-    María Constanza Riquelme &nbsp;·&nbsp; mariariquelme.dev &nbsp;·&nbsp; 2026
+    María Constanza Riquelme &nbsp;·&nbsp; mariariquelme.dev &nbsp;·&nbsp; <span id="cv-year">2026</span>
   </footer>
 
 </article>
 
+<!-- Automatically updates the current year -->
+<script>
+  document.getElementById('cv-year').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
